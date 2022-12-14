@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {React,useState} from 'react'
+import TopNav from './Components/TopNav'
+import Classcomponent from './Components/Classcomponent';
 
-function App() {
+const App = () => {
+  const [name,setName] = useState("Hooks Concept");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello Raj
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TopNav></TopNav>
+      <Classcomponent></Classcomponent>
+      <TopNav></TopNav>
+      <h2>Hello man welcome to Functional Component with {name}</h2>
+      
+      
+    
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
