@@ -5,6 +5,8 @@ import Leftnav from './Components/Leftnav';
 import Righnav from './Righnav';
 import JSX from './Components/JSX';
 import SetStateEg from './Components/SetStateEg';
+import { Revision } from './Components/Revision';
+import RevStateClass from './Components/RevStateClass';
 const App = () => {
   const [name,setName] = useState("Hooks Concept");
   return (
@@ -26,6 +28,12 @@ const App = () => {
       </Classcomponent>
 
       <SetStateEg></SetStateEg>
+
+
+      <Revision nick="pride"></Revision>
+      <RevStateClass  new="Hello I'm Props" >
+        <p>I am Prop Children</p>
+      </RevStateClass>
       
       
       
