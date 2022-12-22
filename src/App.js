@@ -7,11 +7,16 @@ import JSX from './Components/JSX';
 import SetStateEg from './Components/SetStateEg';
 import { Revision } from './Components/Revision';
 import RevStateClass from './Components/RevStateClass';
+import { Hooks } from './Components/Hooks';
+import ParentComp from './Components/ParentComp';
+import ScreenParent from './Components/ScreenParent';
+import { ChildComp } from './Components/ChildComp';
+import { HookUseEffect } from './Components/HookUseEffect';
 const App = () => {
   const [name,setName] = useState("Hooks Concept");
   return (
     <div>
-      <TopNav></TopNav>
+      {/* <TopNav></TopNav>
       <Classcomponent></Classcomponent>
       <TopNav></TopNav>
       <h2>Hello man welcome to Functional Component with {name}</h2>
@@ -34,6 +39,21 @@ const App = () => {
       <RevStateClass  new="Hello I'm Props" >
         <p>I am Prop Children</p>
       </RevStateClass>
+
+      
+      <center>
+      <h3>
+        Hooks Concepts
+        <Hooks gend="male"></Hooks>
+      </h3>
+
+      <h2>Method as props Parent Child</h2>
+      <ParentComp></ParentComp>
+      </center> */}
+      
+      <ScreenParent></ScreenParent>
+      <HookUseEffect></HookUseEffect>
+      
       
       
       

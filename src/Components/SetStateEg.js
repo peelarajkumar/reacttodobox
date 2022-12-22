@@ -27,7 +27,8 @@ changeRank(){
         <h4>{this.state.col}</h4>
         <h4>{this.state.rank}</h4>
         <h4>{this.state.pos}</h4>
-        <button onClick={()=>{this.changeRank()}}> Change Rank</button>
+        {/* binding event handler - by bind(this) or arrow function */}
+        <button onClick={this.changeRank.bind(this)}> Change Rank</button> 
         </center>
 
       </div>
