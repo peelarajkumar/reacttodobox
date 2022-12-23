@@ -12,6 +12,9 @@ import ParentComp from './Components/ParentComp';
 import ScreenParent from './Components/ScreenParent';
 import { ChildComp } from './Components/ChildComp';
 import { HookUseEffect } from './Components/HookUseEffect';
+import { ListRen } from './Components/ListRen';
+import ListClassComp from './Components/ListClassComp';
+import { ListFunK } from './PracComponents/ListFunK';
 const App = () => {
   const [name,setName] = useState("Hooks Concept");
   return (
@@ -51,12 +54,15 @@ const App = () => {
       <ParentComp></ParentComp>
       </center> */}
       
-      <ScreenParent></ScreenParent>
-      <HookUseEffect></HookUseEffect>
+      {/* <ScreenParent></ScreenParent>
+      <HookUseEffect></HookUseEffect> */}
+
       
       
-      
-      
+      {/* <ListRen></ListRen>
+      <ListClassComp></ListClassComp> */}
+
+      <ListFunK></ListFunK>
       
     
     </div>
